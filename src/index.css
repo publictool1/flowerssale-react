@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Mono;
+}
+
+@font-face {
+  font-family: 'Caveat-Regular';
+  src: url('../public/fonts/PTMono/static/Caveat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Mono';
+  src: url('../public/fonts/PTMono/PTMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Hand';
+  src: url('../public/fonts/hand/Caveat-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Caveat-Bold';
+  src: url('../public/fonts/PTMono/static/Caveat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Caveat-Medium';
+  src: url('../public/fonts/PTMono/static/Caveat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Caveat-SemiBold';
+  src: url('../public/fonts/PTMono/static/Caveat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'hand-SemiBold';
+  src: url('../public/fonts/hand/static/Caveat-SemiBold.ttf');
+}
+

@@ -1,0 +1,128 @@
+.ben-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.single {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+} */
+
+.order-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-button button:hover {
+    background-color: #45a049;
+}
+
+/* Для устройств с шириной экрана до 600px */
+@media only screen and (max-width: 600px) {
+    .ben-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+        margin-bottom: 20px;
+    }
+
+    .benefits {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .single {
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .single-img img {
+        border-radius: 5%;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 5px;
+    }
+}
+
+/* Для устройств с шириной экрана от 601px до 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .ben-container {
+        padding: 15px;
+    }
+
+    .benefits {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+
+    .single {
+        width: 45%;
+        padding: 15px;
+    }
+}
+
+/* Для устройств с шириной экрана от 1025px и выше */
+@media only screen and (min-width: 1025px) {
+    .ben-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .single {
+        width: 30%;
+        padding: 20px;
+    }
+}
+

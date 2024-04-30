@@ -1,0 +1,136 @@
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container-pr {
+    margin: 150px 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.product {
+    width: 400px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+}
+
+.name h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.price {
+    padding: 10px;
+    background-color: #4CAF50; /* Светло-зеленый цвет */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info {
+    padding: 10px;
+    font-family: hand;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.buy-button {
+    padding: 10px;
+    text-align: center;
+}
+
+.buy-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Светло-зеленый цвет */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button button:hover {
+    background-color: #45a049; /* Немного темнее для hover-эффекта */
+}
+
+/* Для устройств с шириной экрана до 600px */
+@media only screen and (max-width: 600px) {
+    .container-products {
+        padding: 10px;
+    }
+
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .price, .info, .buy-button {
+        font-size: 1.2rem;
+    }
+
+    .name h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Для устройств с шириной экрана от 601px до 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container-products {
+        padding: 15px;
+    }
+
+    .product {
+        width: 45%; /* Два продукта в ряд */
+        margin: 15px;
+    }
+
+    .price, .info, .buy-button {
+        font-size: 1.3rem;
+    }
+
+    .name h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Для устройств с шириной экрана от 1025px и выше */
+@media only screen and (min-width: 1025px) {
+    .container-products {
+        padding: 20px;
+    }
+
+    .product {
+        width: 30%; /* Три продукта в ряд */
+        margin: 20px;
+    }
+
+    .price, .info, .buy-button {
+        font-size: 1.5rem;
+    }
+
+    .name h3 {
+        font-size: 1.5rem;
+    }
+}

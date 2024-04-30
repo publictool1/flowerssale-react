@@ -1,0 +1,86 @@
+.header {
+    background-image: url('../../../../public/images/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white !important; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    cursor: default; 
+}
+
+.header-title {
+    font-size: 3rem; 
+    margin-bottom: 10px;
+    font-family: hand;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.header-main-title {
+    font-size: 5rem;
+    margin-bottom: 20px; 
+    text-transform: uppercase;
+    font-family: hand;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.header-description {
+    font-size: 2.2rem; 
+    font-family: hand;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Для устройств с шириной экрана до 600px */
+@media only screen and (max-width: 600px) {
+    .header-title {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .header-main-title {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .header-description {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+/* Для устройств с шириной экрана от 601px до 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .header-title {
+        font-size: 2.5rem;
+        margin-bottom: 7px;
+    }
+
+    .header-main-title {
+        font-size: 4rem;
+        margin-bottom: 15px;
+    }
+
+    .header-description {
+        font-size: 2rem;
+    }
+}
+
+/* Для устройств с шириной экрана от 1025px и выше */
+@media only screen and (min-width: 1025px) {
+    .header-title {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .header-main-title {
+        font-size: 5rem;
+        margin-bottom: 20px;
+    }
+
+    .header-description {
+        font-size: 2.2rem;
+    }
+}
